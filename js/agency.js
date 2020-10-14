@@ -30,4 +30,10 @@
         }
     })
 
+    $('.btnConfira').click(function() {
+        $('html, body').stop().animate({
+            scrollTop: ($('#services').offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    })
 })(jQuery); // End of use strict

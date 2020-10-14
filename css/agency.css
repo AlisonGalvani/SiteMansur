@@ -152,7 +152,8 @@ fieldset[disabled] .btn-xl.active {
 }
 .navbar-custom .navbar-brand {
   color: white;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-family: 'Times New Roman', Times, serif;
+  /* font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; */
   text-shadow: 2px 2px black;
 }
 .navbar-custom .navbar-brand:hover,
@@ -202,16 +203,16 @@ fieldset[disabled] .btn-xl.active {
   .navbar-custom {
     background-color: transparent;
     padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    -webkit-transition: padding 0.1.2s;
+    -moz-transition: padding 0.1.2s;
+    transition: padding 0.1.2s;
     border: none;
   }
   .navbar-custom .navbar-brand {
     font-size: 2em;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 0.1.2s;
+    -moz-transition: all 0.1.2s;
+    transition: all 0.1.2s;
   }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 3px;
@@ -238,8 +239,8 @@ header {
 
 .imgBackground {
     /* background-image: url('../img/header-bg.jpg'); */
-    /* position: absolute; */
-    background-image: url('../img/paisagem1');
+    /* background-image: url('../img/paisagem1'); */
+    background-image: url('../img/imagem3.jpg');
     background-color: rgba(0, 0, 0, 0.774);
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -248,87 +249,276 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    filter : brightness(50%);
+    filter : brightness(80%);
     height: 100vh;
     width: 100vw;
     z-index: 1;
 }
 
 header .intro-text {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; */
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
 }
+
+header .intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btnConfira {
+  cursor: pointer;
+}
+
+.btnConfira span {
+  display: block;
+  font-size: 17px;
+}
+
+.btnConfira i {
+  display: block;
+}
+
 header .intro-text .intro-lead-in {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Droid Serif";
   font-style: italic;
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 25px;
-  text-shadow: 2px 2px black;
+  text-shadow: 2px 2px 5px black;
 }
 header .intro-text .intro-heading {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman";
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 30px;
   margin-bottom: 25px;
-  text-shadow: 3px 3px black;
+  text-shadow: 2px 2px 5px black;
 }
 
-.box_destaques {
-  width: 300px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.637);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px;
-  border-left: 8px solid #36a4fe;
-  border-radius: 5px;
-  box-shadow: 3px 3px black;
+@keyframes cl1 {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
 
+.cl1{
+  -webkit-animation: cl1 1.2s linear infinite;
+  -moz-animation: cl1 1.2s linear infinite;
+  -ms-animation: cl1 1.2s linear infinite;
+  -o-animation: cl1 1.2s linear infinite;
+  animation: cl1 1.2s linear infinite;
+}
+
+@keyframes cl2 {
+  0% { opacity: 0;}
+  25% { opacity: 0; }
+  50% { opacity: 1;}
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+  /* 100% { opacity: 1; } */
+}
+
+.cl2{
+  -webkit-animation: cl2 1.2s linear infinite;
+  -moz-animation: cl2 1.2s linear infinite;
+  -ms-animation: cl2 1.2s linear infinite;
+  -o-animation: cl2 1.2s linear infinite;
+  animation: cl2 1.2s linear infinite;
+}
+
+@media (min-width: 320px) {
+  header .titles {
+    margin-top: 100px;
+  }
+
+  .btnConfira span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .btnConfira i {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 20px;
+    line-height: 22px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: 25px;
+    line-height: 30px;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+@media (min-width: 768px) {
+  header .titles {
+    margin-top: 100px;
+  }
+
+  .btnConfira span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .btnConfira i {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 25px;
+    line-height: 22px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: 30px;
+    line-height: 35px;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .titles {
+    margin-top: 100px;
+  }
+
+  .btnConfira span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .btnConfira i {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 27px;
+    line-height: 22px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: 33px;
+    line-height: 35px;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+@media (min-width: 1440px) {
+  header .titles {
+    margin-top: 100px;
+  }
+
+  .btnConfira span {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .btnConfira i {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 27px;
+    line-height: 22px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+@media (min-width: 1920px) {
+  header .titles {
+    margin-top: 100px;
+  }
+
+  .btnConfira span {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .btnConfira i {
+    font-size: 60px;
+    line-height: 30px;
+  }
+
+  header .intro-text .intro-lead-in {
+    font-size: 27px;
+    line-height: 22px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  header .intro-text .intro-heading {
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 3px 3px 5px black;
+  }
+}
+
+.boxDestaques {
+  border: 1px solid red;
+  width: 200px;
+  height: 90px;
+  margin-top: 20px;
+  float: left;
 }
 
 .divBoxDestaques {
-  margin-top: 130px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: center;
+  float: left;
 }
 
-.title_destaque {
-  font-size: 24px;
-}
-
-.descricao_destaque {
-  font-size: 14px;
-  text-align: left;
-  margin-top: 10px;
+.img_destaque {
+  /* position: absolute; */
+  z-index: -1;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  float: left;
+  max-width: 100%;
 }
 
 @media (min-width: 768px) {
 
-  header .intro-text {
-    padding-top: 200px;
-    /* padding-bottom: 200px; */
+  .boxDestaques {
+    border: 1px solid red;
+    width: 200px;
+    height: 150px;
+    margin-top: 20px;
   }
-  header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 25px;
-  }
-  header .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 55px;
-    margin-bottom: 50px;
-  }
+  
 }
+
 section {
   padding: 100px 0;
 }
@@ -690,9 +880,9 @@ ul.social-buttons li a {
   line-height: 40px;
   color: white;
   outline: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.1.2s;
+  -moz-transition: all 0.1.2s;
+  transition: all 0.1.2s;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,

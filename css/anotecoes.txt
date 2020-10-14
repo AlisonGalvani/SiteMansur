@@ -1,0 +1,4 @@
+Grandes Textos 
+    -As fontes do tipo Serif, ou serifadas, são indicadas para livros e texto grandes impressos, 
+    pois auxiliam na leitura, dando uma maior continuidade e sem causar cansaço visual.
+    E   xemplos: Times New Roman, Palatino, Book Antiqua, Courier, Garamond.
