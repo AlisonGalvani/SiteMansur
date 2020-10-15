@@ -635,7 +635,7 @@ section h3.section-subheading {
   display: table;
 }
 .timeline > li:after {
-  clear: both;
+  /* clear: both; */
 }
 .timeline > li .timeline-panel {
   width: 100%;
@@ -665,9 +665,11 @@ section h3.section-subheading {
   z-index: 100;
   /* background-color: #fed136; */
   background-color: rgba(0, 0, 0, 0.575);
+  background-color: rgba(0, 0, 0, 0.698);
   color: white;
   border-radius: 100%;
-  border: 7px solid #f1f1f1;
+  /* border: 7px solid #f1f1f1; */
+  border: 7px solid #36a4fe;
   text-align: center;
 }
 .timeline > li .timeline-image h4 {
@@ -888,7 +890,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #36a4fe;
 }
 .btn:focus,
 .btn:active,
